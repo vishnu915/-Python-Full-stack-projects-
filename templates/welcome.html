@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container welcome-container">
+        <h1>Welcome, {{ username }}!</h1>
+        
+        <a href="{{ url_for('logout') }}" class="btn logout-btn">Logout</a><br>
+    </div>
+</body>
+</html>
